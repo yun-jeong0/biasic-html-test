@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSN Homepage Prototype</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7fafc;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #3182ce;
+            color: #fff;
+            padding: 16px 0;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #ecc94b;
+            color: #000;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #d69e2e;
+        }
+
+        main {
+            margin-top: 16px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .shadow {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .p-4 {
+            padding: 16px;
+        }
+
+        .bg-white {
+            background-color: #fff;
+        }
+
+        .mt-2 {
+            margin-top: 8px;
+        }
+
+        .mt-4 {
+            margin-top: 16px;
+        }
+
+        h1, h2 {
+            margin: 0 0 8px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: disc;
+        }
+
+        .text-sm {
+            font-size: 14px;
+        }
+
+        .text-black {
+            color: #000;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .header-flex, .main-flex {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-flex {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container flex header-flex">
+            <div class="flex">
+               
+                <nav>
+                    <a href="#">Outlook.com</a>
+                    <a href="#">Skype</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">My MSN</a>
+                    <a href="#">Latino</a>
+                    <a href="#">Bing</a>
+                    <a href="#">Rewards</a>
+                </nav>
+            </div>
+            <div>
+                <button class="button">Preview it today</button>
+                <div class="text-sm">
+                    <span>Make MSN my homepage</span> | 
+                    <span>Welcome to MSN</span> 
+                    <a href="#">Page options</a> | 
+                    <a href="#">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="flex main-flex">
+            <div class="flex-1">
+                <div class="bg-white p-4 shadow">
+                    <div class="flex main-flex">
+                        <span>September 8, 2014 as of 12:16 PM</span>
+                        <span>Essen, DEU | 20°C | 5-day</span>
+                    </div>
+                    <h1>7 cures for your case of the Mondays</h1>
+                    <p>You can set the tone for the week if you power through the morning grogginess &amp; resist the urge to hit snooze. Don't forget to stop &amp; smell the flowers, too.</p>
+                    <p class="mt-2">You don't have to be an optimist to be happy</p>
+                    <p class="mt-2">Older adults think better in the morning</p>
+                </div>
+                <div class="bg-white p-4 shadow mt-4">
+                    <h2>Editor's Picks</h2>
+                    <ul class="mt-2">
+                        <li>100 evacuated from Yosemite</li>
+                        <li>NFL union to meet Monday</li>
+                        <li>Yankees honor Derek Jeter</li>
+                        <li>Christie scandal one year old</li>
+                        <li>Mountain lion attacks boy</li>
+                        <li>Mane's prison sentence cut</li>
+                        <li>Harvard to get record gift</li>
+                        <li>Priest with HIV pleads guilty</li>
+                        <li>Bad box office run continues</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 33%;">
+                <div class="bg-white p-4 shadow">
+                    <img src="image copy.png" alt="Ad" class="w-full">
+                    <button class="button mt-2">Get a Quote</button>
+                </div>
+                <div class="bg-white p-4 shadow">
+                    <img src="image copy 2.png" alt="Ad" class="w-full">
+                    <button class="button mt-2">Get a Quote</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-4 shadow mt-4">
+            <h2>Image Banner</h2>
+            <img src="image copy 3.png" alt="Banner" class="w-full mt-2">
+        </div>
+        <div class="bg-white p-4 shadow mt-4">
+            <h2>Board</h2>
+            <p>You can set the tone for the week if you power through the morning grogginess &amp; resist the urge to hit snooze. Don't forget to stop &amp; smell the flowers, too.</p>
+            <p class="mt-2">You don't have to be an optimist to be happy</p>
+            <p class="mt-2">Older adults think better in the morning</p>
+        </div>
+    </main>
+</body>
+</html>
