@@ -7,12 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
     <header class="bg-white shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4">
+        <nav class="container mx-auto px-4">
             <!-- Primary Navigation -->
-            <div class="flex justify-between items-center py-3 border-b">
-                <div class="flex space-x-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex space-x-6">
                     <a href="#" class="text-indigo-600 font-semibold">MSN</a>
                     <a href="#" class="text-gray-600 hover:text-indigo-600">Outlook.com</a>
                     <a href="#" class="text-gray-600 hover:text-indigo-600">Skype</a>
@@ -22,56 +21,71 @@
                     <a href="#" class="text-gray-600 hover:text-indigo-600">Bing</a>
                     <a href="#" class="text-gray-600 hover:text-indigo-600">Rewards</a>
                 </div>
+                
+                <!-- Secondary Navigation -->
                 <div class="flex items-center space-x-4">
                     <a href="#" class="text-indigo-600">Preview it today</a>
                     <a href="#" class="text-indigo-600">Make MSN homepage</a>
                     <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg">Sign in</button>
                 </div>
             </div>
-            
-            <!-- Location Bar -->
-            <div class="flex justify-between py-2 text-sm text-gray-600">
-                <div>{September 8, 2014 as of 12:16 PM}</div>
-                <div>Essen, DEU | 20°C | 5-day</div>
-            </div>
         </nav>
+
+        <!-- Metadata Bar -->
+        <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-2">
+            <div class="container mx-auto px-4 flex justify-between">
+                <p>September 8, 2014 as of 12:16 PM</p>
+                <p>Essen, DEU | 20°C | 5-day</p>
+            </div>
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Main Article -->
-            <div class="lg:col-span-2">
-                <div class="bg-gradient-to-r from-pink-500 to-orange-500 rounded-xl p-8 text-white mb-8">
-                    <h1 class="text-3xl font-bold mb-6">7 cures for your case of the Mondays</h1>
+            <div class="md:col-span-2">
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h1 class="text-3xl font-bold mb-6 text-gray-800">7 cures for your case of the Mondays</h1>
                     <ul class="space-y-4">
-                        <li>• Power through morning grogginess & resist hitting snooze</li>
-                        <li>• Don't forget to stop & smell the flowers</li>
-                        <li>• You don't have to be an optimist to be happy</li>
-                        <li>• Older adults think better in the morning</li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-emerald-500">•</span>
+                            <p>You can set the tone for the week if you power through the morning grogginess & resist the urge to hit snooze</p>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-emerald-500">•</span>
+                            <p>Don't forget to stop & smell the flowers, too</p>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-emerald-500">•</span>
+                            <p>You don't have to be an optimist to be happy</p>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-emerald-500">•</span>
+                            <p>Older adults think better in the morning</p>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- CTA Buttons -->
-                <div class="flex space-x-4">
-                    <button class="flex-1 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700">Get a Quote</button>
-                    <button class="flex-1 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700">Get a Quote</button>
+                <div class="grid grid-cols-2 gap-4 mt-6">
+                    <button class="bg-gradient-to-r from-pink-500 to-orange-500 text-white py-3 px-6 rounded-lg text-lg font-semibold">Get a Quote</button>
+                    <button class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-3 px-6 rounded-lg text-lg font-semibold">Get a Quote</button>
                 </div>
             </div>
 
             <!-- Editor's Picks -->
-            <div class="bg-gradient-to-b from-purple-500 to-indigo-600 rounded-xl p-6 text-white">
-                <h2 class="text-xl font-semibold mb-4">Editor's Picks</h2>
+            <div class="bg-white rounded-xl shadow-sm p-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Editor's Picks</h2>
                 <ul class="space-y-3">
-                    <li>• 100 evacuated from Yosemite</li>
-                    <li>• NFL union to meet Monday</li>
-                    <li>• Yankees honor Derek Jeter</li>
-                    <li>• Christie scandal one year old</li>
-                    <li>• Mountain lion attacks boy</li>
-                    <li>• Mane's prison sentence cut</li>
-                    <li>• Harvard to get record gift</li>
-                    <li>• Priest with HIV pleads guilty</li>
-                    <li>• Bad box office run continues</li>
+                    <li class="border-b border-gray-100 pb-2">100 evacuated from Yosemite</li>
+                    <li class="border-b border-gray-100 pb-2">NFL union to meet Monday</li>
+                    <li class="border-b border-gray-100 pb-2">Yankees honor Derek Jeter</li>
+                    <li class="border-b border-gray-100 pb-2">Christie scandal one year old</li>
+                    <li class="border-b border-gray-100 pb-2">Mountain lion attacks boy</li>
+                    <li class="border-b border-gray-100 pb-2">Mane's prison sentence cut</li>
+                    <li class="border-b border-gray-100 pb-2">Harvard to get record gift</li>
+                    <li class="border-b border-gray-100 pb-2">Priest with HIV pleads guilty</li>
+                    <li>Bad box office run continues</li>
                 </ul>
             </div>
         </div>
