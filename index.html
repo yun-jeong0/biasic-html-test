@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern MSN</title>
+    <title>Modern MSN Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50">
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-        <nav class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <!-- Main Menu -->
-                <div class="flex space-x-6">
+<body class="bg-gradient-to-br from-indigo-50 to-purple-50 min-h-screen">
+    <!-- Header Navigation -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <nav class="flex space-x-6">
                     <a href="#" class="font-semibold hover:text-indigo-200">MSN</a>
                     <a href="#" class="hover:text-indigo-200">Outlook.com</a>
                     <a href="#" class="hover:text-indigo-200">Skype</a>
@@ -21,68 +20,66 @@
                     <a href="#" class="hover:text-indigo-200">Latino</a>
                     <a href="#" class="hover:text-indigo-200">Bing</a>
                     <a href="#" class="hover:text-indigo-200">Rewards</a>
-                </div>
-                <!-- User Actions -->
-                <div class="flex space-x-4">
+                </nav>
+                <div class="flex items-center space-x-4">
                     <a href="#" class="text-sm hover:text-indigo-200">Preview it today</a>
                     <a href="#" class="text-sm hover:text-indigo-200">Make MSN homepage</a>
-                    <button class="bg-indigo-500 px-4 py-1 rounded-full hover:bg-indigo-400">Sign in</button>
+                    <button class="bg-white text-indigo-600 px-4 py-1 rounded-full text-sm font-semibold hover:bg-indigo-100">Sign in</button>
                 </div>
             </div>
-        </nav>
-        <!-- DateTime & Location Bar -->
-        <div class="bg-indigo-700 py-2">
-            <div class="container mx-auto px-4 flex justify-between text-sm">
-                <p>September 8, 2014 as of 12:16 PM</p>
-                <p>Essen, DEU | 20°C | 5-day</p>
+            <div class="flex justify-between items-center py-2 text-sm">
+                <span>September 8, 2014 as of 12:16 PM</span>
+                <span>Essen, DEU | 20°C | 5-day</span>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8 flex gap-8">
-        <!-- Article Section -->
-        <div class="flex-grow">
-            <article class="bg-white rounded-xl shadow-lg p-8">
-                <h1 class="text-3xl font-bold text-gray-800 mb-6">7 cures for your case of the Mondays</h1>
-                <div class="space-y-4">
-                    <div class="rounded-lg bg-gradient-to-r from-violet-100 to-fuchsia-100 p-4">
-                        <p>You can set the tone for the week if you power through the morning grogginess & resist the urge to hit snooze</p>
-                    </div>
-                    <div class="rounded-lg bg-gradient-to-r from-rose-100 to-teal-100 p-4">
-                        <p>Don't forget to stop & smell the flowers, too</p>
-                    </div>
-                    <div class="rounded-lg bg-gradient-to-r from-cyan-100 to-blue-100 p-4">
-                        <p>You don't have to be an optimist to be happy</p>
-                    </div>
-                    <div class="rounded-lg bg-gradient-to-r from-emerald-100 to-cyan-100 p-4">
-                        <p>Older adults think better in the morning</p>
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="col-span-2">
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-6">7 cures for your case of the Mondays</h1>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-pink-50 to-indigo-50 p-4 rounded-lg">
+                            <p class="text-gray-700">You can set the tone for the week if you power through the morning grogginess & resist the urge to hit snooze</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-lg">
+                            <p class="text-gray-700">Don't forget to stop & smell the flowers, too</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-yellow-50 to-pink-50 p-4 rounded-lg">
+                            <p class="text-gray-700">You don't have to be an optimist to be happy</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 rounded-lg">
+                            <p class="text-gray-700">Older adults think better in the morning</p>
+                        </div>
                     </div>
                 </div>
-            </article>
-        </div>
+            </div>
 
-        <!-- Sidebar -->
-        <aside class="w-96 space-y-6">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">Editor's Picks</h2>
-                <div class="space-y-3">
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">100 evacuated from Yosemite</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Mane's prison sentence cut</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">NFL union to meet Monday</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Harvard to get record gift</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Yankees honor Derek Jeter</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Priest with HIV pleads guilty</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Christie scandal one year old</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Bad box office run continues</a>
-                    <a href="#" class="block hover:bg-slate-50 p-2 rounded">Mountain lion attacks boy</a>
+            <!-- Right Column -->
+            <div class="col-span-1">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Editor's Picks</h2>
+                    <div class="space-y-3">
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">100 evacuated from Yosemite</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Mane's prison sentence cut</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">NFL union to meet Monday</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Harvard to get record gift</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Yankees honor Derek Jeter</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Priest with HIV pleads guilty</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Christie scandal one year old</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Bad box office run continues</a>
+                        <a href="#" class="block hover:bg-gray-50 p-2 rounded-lg">Mountain lion attacks boy</a>
+                    </div>
+                </div>
+                <div class="mt-6 space-y-4">
+                    <button class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700">Get a Quote</button>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700">Get a Quote</button>
                 </div>
             </div>
-            <div class="space-y-4">
-                <button class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-3 rounded-lg hover:opacity-90">Get a Quote</button>
-                <button class="w-full bg-gradient-to-r from-violet-500 to-purple-500 text-white py-3 rounded-lg hover:opacity-90">Get a Quote</button>
-            </div>
-        </aside>
+        </div>
     </main>
 </body>
 </html>
