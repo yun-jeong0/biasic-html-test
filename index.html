@@ -7,96 +7,96 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-indigo-600 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex space-x-6">
-                    <a href="#" class="font-bold text-xl">MSN</a>
-                    <a href="#" class="hover:text-indigo-200">Outlook.com</a>
-                    <a href="#" class="hover:text-indigo-200">Skype</a>
-                    <a href="#" class="hover:text-indigo-200">Mobile</a>
-                    <a href="#" class="hover:text-indigo-200">My MSN</a>
-                    <a href="#" class="hover:text-indigo-200">Latino</a>
-                    <a href="#" class="hover:text-indigo-200">Bing</a>
-                    <a href="#" class="hover:text-indigo-200">Rewards</a>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="text-sm hover:text-indigo-200">Preview it today</a>
-                    <a href="#" class="text-sm hover:text-indigo-200">Make MSN homepage</a>
-                    <button class="bg-white text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-indigo-50">Sign in</button>
-                </div>
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Main Menu -->
+                <ul class="flex space-x-6 text-gray-600">
+                    <li><a href="#" class="hover:text-indigo-600 font-medium">MSN</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Outlook.com</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Skype</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Mobile</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">My MSN</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Latino</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Bing</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Rewards</a></li>
+                </ul>
+                
+                <!-- Right Menu -->
+                <ul class="flex space-x-6 text-gray-600">
+                    <li><a href="#" class="text-indigo-600 font-medium">Preview it today</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Make MSN homepage</a></li>
+                    <li><a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- DateTime & Location Bar -->
+        <div class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <span>September 8, 2014 as of 12:16 PM</span>
+                <span>Essen, DEU | 20°C | 5-day</span>
             </div>
         </div>
-    </nav>
-
-    <!-- Header Info -->
-    <div class="bg-white border-b">
-        <div class="container mx-auto px-4 py-2 flex justify-between text-sm text-gray-600">
-            <span>September 8, 2014 as of 12:16 PM</span>
-            <span>Essen, DEU | 20°C | 5-day</span>
-        </div>
-    </div>
+    </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-3 gap-8">
-            <!-- Left Column -->
-            <div class="col-span-2 space-y-8">
-                <!-- Monday Cures -->
-                <section class="bg-white rounded-xl shadow-sm p-6">
-                    <h1 class="text-2xl font-bold text-gray-800 mb-6">7 cures for your case of the Mondays</h1>
-                    <ul class="space-y-4">
-                        <li class="flex items-start space-x-3">
-                            <div class="flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full mt-2"></div>
-                            <p class="text-gray-700">You can set the tone for the week if you power through the morning grogginess & resist the urge to hit snooze</p>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <div class="flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full mt-2"></div>
-                            <p class="text-gray-700">Don't forget to stop & smell the flowers, too</p>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <div class="flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full mt-2"></div>
-                            <p class="text-gray-700">You don't have to be an optimist to be happy</p>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <div class="flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full mt-2"></div>
-                            <p class="text-gray-700">Older adults think better in the morning</p>
-                        </li>
-                    </ul>
-                </section>
+    <main class="container mx-auto px-4 py-8 grid grid-cols-12 gap-8">
+        <!-- Featured Article -->
+        <article class="col-span-8 bg-white rounded-xl shadow-lg p-8">
+            <h1 class="text-3xl font-bold mb-6 text-gray-800">7 cures for your case of the Mondays</h1>
+            <ul class="space-y-4 text-gray-600">
+                <li class="flex items-start">
+                    <span class="text-indigo-600 mr-2">•</span>
+                    You can set the tone for the week if you power through the morning grogginess & resist the urge to hit snooze
+                </li>
+                <li class="flex items-start">
+                    <span class="text-indigo-600 mr-2">•</span>
+                    Don't forget to stop & smell the flowers, too
+                </li>
+                <li class="flex items-start">
+                    <span class="text-indigo-600 mr-2">•</span>
+                    You don't have to be an optimist to be happy
+                </li>
+                <li class="flex items-start">
+                    <span class="text-indigo-600 mr-2">•</span>
+                    Older adults think better in the morning
+                </li>
+            </ul>
+        </article>
 
-                <!-- Editor's Picks -->
-                <section class="bg-white rounded-xl shadow-sm p-6">
-                    <h2 class="text-xl font-bold text-gray-800 mb-6">Editor's Picks</h2>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="space-y-4">
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• 100 evacuated from Yosemite</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• NFL union to meet Monday</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Yankees honor Derek Jeter</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Christie scandal one year old</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Mountain lion attacks boy</a>
-                        </div>
-                        <div class="space-y-4">
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Mane's prison sentence cut</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Harvard to get record gift</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Priest with HIV pleads guilty</a>
-                            <a href="#" class="block text-gray-700 hover:text-indigo-600">• Bad box office run continues</a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Right Column -->
-            <div class="space-y-6">
-                <button class="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-4 px-6 rounded-xl shadow-sm hover:opacity-90">
+        <!-- Sidebar -->
+        <aside class="col-span-4 space-y-6">
+            <div class="space-y-4">
+                <button class="w-full py-3 px-6 rounded-lg bg-gradient-to-r from-orange-400 to-pink-500 text-white font-medium hover:opacity-90">
                     Get a Quote
                 </button>
-                <button class="w-full bg-violet-500 text-white py-4 px-6 rounded-xl shadow-sm hover:opacity-90">
+                <button class="w-full py-3 px-6 rounded-lg bg-purple-600 text-white font-medium hover:opacity-90">
                     Get a Quote
                 </button>
             </div>
-        </div>
+        </aside>
+
+        <!-- Editor's Picks -->
+        <section class="col-span-12 bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Editor's Picks</h2>
+            <div class="grid grid-cols-2 gap-8">
+                <ul class="space-y-4 text-gray-600">
+                    <li>100 evacuated from Yosemite</li>
+                    <li>NFL union to meet Monday</li>
+                    <li>Yankees honor Derek Jeter</li>
+                    <li>Christie scandal one year old</li>
+                    <li>Mountain lion attacks boy</li>
+                </ul>
+                <ul class="space-y-4 text-gray-600">
+                    <li>Mane's prison sentence cut</li>
+                    <li>Harvard to get record gift</li>
+                    <li>Priest with HIV pleads guilty</li>
+                    <li>Bad box office run continues</li>
+                </ul>
+            </div>
+        </section>
     </main>
 </body>
 </html>
