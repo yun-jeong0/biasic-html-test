@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll("img");
     const modal = document.createElement("div");
@@ -48,4 +47,14 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "none";
         }
     });
+
+    // 깜빡거리는 효과 추가
+    const welcomeText = document.getElementById("welcome-text");
+    setInterval(() => {
+        if (welcomeText.style.visibility === "hidden") {
+            welcomeText.style.visibility = "visible";
+        } else {
+            welcomeText.style.visibility = "hidden";
+        }
+    }, 1000); // 1000ms = 1초 간격으로 깜빡임
 });
