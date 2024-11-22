@@ -1,218 +1,266 @@
 <!DOCTYPE HTML>
-<html lang="ko">
-<head>
-    <title>Minimaxing by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-br from-slate-50 to-slate-100">
-    <div id="page-wrapper">
-        <!-- Header -->
-        <div id="header-wrapper">
-            <header class="bg-indigo-600 text-white">
-                <div class="container mx-auto px-4 py-6">
-                    <div class="flex justify-between items-center">
-                        <h1><a href="index.html" id="logo" class="w-32 h-8 bg-indigo-500 rounded">Demo</a></h1>
-                        <nav id="nav">
-                            <ul class="flex space-x-8">
-                                <li><a href="index.html" class="hover:text-indigo-200 transition current-page-item">Homepage</a></li>
-                                <li><a href="twocolumn1.html" class="hover:text-indigo-200 transition">Category 1</a></li>
-                                <li><a href="twocolumn2.html" class="hover:text-indigo-200 transition">Category 2</a></li>
-                                <li><a href="onecolumn.html" class="hover:text-indigo-200 transition">Category 3</a></li>
-                                <li><a href="threecolumn.html" class="hover:text-indigo-200 transition">Category 4</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-        </div><!-- Banner -->
-        <div id="banner-wrapper">
-            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-24">
-                <div class="container mx-auto px-4 text-center">
-                    <div id="banner">
-                        <h2 class="text-5xl font-bold mb-4">Some Banner</h2>
-                        <span class="text-xl">Example banner will be here...</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
 
-        <!-- Main -->
-        <main class="container mx-auto px-4 py-16">
-            <div class="row main-row">
-                <section class="mb-24">
-                    <h2 class="text-4xl font-bold mb-8 text-gray-800">Welcome to Minimaxing!</h2>
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        This is <strong>Minimaxing</strong>, a fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> and released for free by <a href="http://html5up.net">HTML5 UP</a>. It features
-                        a simple, lightweight design, solid HTML5 and CSS3 code, and full responsive support for desktop, tablet, and small displays.
-                    </p>
-                    <footer class="controls">
-                        <a href="http://html5up.net" class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700">More cool designs ...</a>
-                    </footer>
-                </section>
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
 
-                <section class="mb-24">
-                    <h2 class="text-4xl font-bold mb-12 text-gray-800">Who are you guys?</h2>
-                    <div class="grid md:grid-cols-2 gap-12">
-                        <div class="flex gap-8 items-start">
-                            <a href="#"><img src="images/pic2.jpg" alt="" class="w-32 h-32 rounded-xl"/></a>
-                            <div>
-                                <h4 class="font-bold mb-2">Jane Anderson</h4>
-                                <p class="text-gray-600">Varius nibh. Suspendisse vitae magna eget et amet mollis justo facilisis amet quis.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-8 items-start">
-                            <a href="#"><img src="images/pic1.jpg" alt="" class="w-32 h-32 rounded-xl"/></a>
-                            <div>
-                                <h4 class="font-bold mb-2">James Doe</h4>
-                                <p class="text-gray-600">Vitae magna eget odio amet mollis justo facilisis amet quis. Sed sagittis consequat.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section><section class="mb-24">
-                    <h2 class="text-4xl font-bold mb-8 text-gray-800">How about some links?</h2>
-                    <ul class="grid md:grid-cols-2 gap-4">
-                        <div class="col-6 col-12-small">
-                            <ul class="link-list">
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Sed neque nisi consequat</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Dapibus sed mattis blandit</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Quis accumsan lorem</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Suspendisse varius ipsum</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Eget et amet consequat</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-12-small">
-                            <ul class="link-list">
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Quis accumsan lorem</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Sed neque nisi consequat</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Eget et amet consequat</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Dapibus sed mattis blandit</a></li>
-                                <li><a href="#" class="text-indigo-600 hover:text-indigo-800">Vitae magna sed dolore</a></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </section>
+								<header id="header">
+									<h1><a href="index.html" id="logo">Demo</a></h1>
+									<nav id="nav">
+										<a href="index.html" class="current-page-item">Homepage</a>
+										<a href="twocolumn1.html">category1</a>
+										<a href="twocolumn2.html">category2</a>
+										<a href="onecolumn.html">category3</a>
+										<a href="threecolumn.html">category4</a>
+									</nav>
+								</header>
 
-                <section class="mb-24">
-                    <h2 class="text-4xl font-bold mb-8 text-gray-800">An assortment of pictures and text</h2>
-                    <div class="bg-white rounded-2xl p-8 shadow-lg">
-                        <p class="text-gray-600 mb-8">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
-                        Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis
-                        justo facilisis quis. Sed sagittis mauris amet tellus gravida
-                        lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
-                        sit amet consequat sed dolore.</p>
-                        <ul class="space-y-8">
-                            <li class="flex gap-8">
-                                <a href="#"><img src="images/pic3.jpg" alt="" class="w-48 h-auto rounded-xl"/></a>
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Magna Gravida Dolore</h3>
-                                    <p class="text-gray-600">Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-                                    facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-                                    Maecenas eu arcu purus, phasellus fermentum elit.</p>
-                                </div>
-                            </li><li class="flex gap-8">
-                                <a href="#"><img src="images/pic4.jpg" alt="" class="w-48 h-auto rounded-xl"/></a>
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Magna Gravida Dolore</h3>
-                                    <p class="text-gray-600">Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-                                    facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-                                    Maecenas eu arcu purus, phasellus fermentum elit.</p>
-                                </div>
-                            </li>
-                            <li class="flex gap-8">
-                                <a href="#"><img src="images/pic5.jpg" alt="" class="w-48 h-auto rounded-xl"/></a>
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Magna Gravida Dolore</h3>
-                                    <p class="text-gray-600">Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-                                    facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-                                    Maecenas eu arcu purus, phasellus fermentum elit.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                <section class="mb-24">
-                    <h2 class="text-4xl font-bold mb-8 text-gray-800">Just another blog post</h2>
-                    <div class="bg-white rounded-2xl p-8 shadow-lg">
-                        <div class="text-sm text-gray-500 mb-4">33 comments</div>
-                        <img src="images/pic6.jpg" alt="" class="w-full h-auto rounded-xl mb-8"/>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Magna Gravida Dolore</h3>
-                        <p class="text-gray-600 mb-8">Aenean non massa sapien. In hac habitasse platea dictumst.
-                        Maecenas sodales purus et nulla sodales aliquam. Aenean ac
-                        porttitor metus. In hac habitasse platea dictumst. Phasellus
-                        blandit turpis in leo scelerisque mollis. Nulla venenatis
-                        ipsum nec est porta rhoncus. Mauris sodales sed pharetra
-                        nisi nec consectetur. Cras elit magna, hendrerit nec
-                        consectetur in, sollicitudin vitae justo. Cras amet aliquet
-                        Aliquam ligula turpis, feugiat id fermentum malesuada,
-                        rutrum eget turpis. Mauris sodales sed pharetra nisi nec
-                        consectetur. Cras elit magna, hendrerit nec consectetur
-                        in sollicitudin vitae.</p>
-                        <footer class="controls">
-                            <a href="#" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">Continue Reading</a>
-                        </footer>
-                    </div>
-                </section>
-            </div>
-        </main>
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<div class="container">
 
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-16">
-            <div class="container mx-auto px-4">
-                <section class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8">How About a Truckload of Links?</h2>
-                    <div class="grid md:grid-cols-4 gap-8"><ul class="space-y-2">
-                            <li><a href="#" class="hover:text-indigo-400">Sed neque nisi consequat</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Dapibus sed mattis blandit</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Quis accumsan lorem</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Suspendisse varius ipsum</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Eget et amet consequat</a></li>
-                        </ul>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="hover:text-indigo-400">Quis accumsan lorem</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Sed neque nisi consequat</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Eget et amet consequat</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Dapibus sed mattis blandit</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Vitae magna sed dolore</a></li>
-                        </ul>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="hover:text-indigo-400">Sed neque nisi consequat</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Dapibus sed mattis blandit</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Quis accumsan lorem</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Suspendisse varius ipsum</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Eget et amet consequat</a></li>
-                        </ul>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="hover:text-indigo-400">Quis accumsan lorem</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Sed neque nisi consequat</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Eget et amet consequat</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Dapibus sed mattis blandit</a></li>
-                            <li><a href="#" class="hover:text-indigo-400">Vitae magna sed dolore</a></li>
-                        </ul>
-                    </div>
-                </section>
+						<div id="banner">
+							<h2>some banner</h2>
+							<span>example banner will be here...</span>
+						</div>
 
-                <section class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8">Something of Interest</h2>
-                    <p class="text-gray-400 mb-8">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida lorem ipsum dolor sit blandit.</p>
-                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">Oh, Please Continue...</button>
-                </section>
+					</div>
+				</div>
 
-                <div class="text-center text-gray-500 text-sm">
-                    © Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
-                </div>
-            </div>
-        </footer>
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-4 col-12-medium">
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-    </div>
-</body>
+								<section>
+									<h2>Welcome to Minimaxing!</h2>
+									<p>This is <strong>Minimaxing</strong>, a fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> and released for free by <a href="http://html5up.net">HTML5 UP</a>. It features
+									a simple, lightweight design, solid HTML5 and CSS3 code, and full responsive support for desktop, tablet, and small displays.</p>
+									<footer class="controls">
+										<a href="http://html5up.net" class="button">More cool designs ...</a>
+									</footer>
+								</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<section>
+									<h2>Who are you guys?</h2>
+									<ul class="small-image-list">
+										<li>
+											<a href="#"><img src="images/pic2.jpg" alt="" class="left" /></a>
+											<h4>Jane Anderson</h4>
+											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo facilisis amet quis.</p>
+										</li>
+										<li>
+											<a href="#"><img src="images/pic1.jpg" alt="" class="left" /></a>
+											<h4>James Doe</h4>
+											<p>Vitae magna eget odio amet mollis justo facilisis amet quis. Sed sagittis consequat.</p>
+										</li>
+									</ul>
+								</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<section>
+									<h2>How about some links?</h2>
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<ul class="link-list">
+													<li><a href="#">Sed neque nisi consequat</a></li>
+													<li><a href="#">Dapibus sed mattis blandit</a></li>
+													<li><a href="#">Quis accumsan lorem</a></li>
+													<li><a href="#">Suspendisse varius ipsum</a></li>
+													<li><a href="#">Eget et amet consequat</a></li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-small">
+												<ul class="link-list">
+													<li><a href="#">Quis accumsan lorem</a></li>
+													<li><a href="#">Sed neque nisi consequat</a></li>
+													<li><a href="#">Eget et amet consequat</a></li>
+													<li><a href="#">Dapibus sed mattis blandit</a></li>
+													<li><a href="#">Vitae magna sed dolore</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<section>
+									<h2>An assortment of pictures and text</h2>
+									<p>Duis neque nisi, dapibus sed mattis quis, rutrum et accumsan.
+									Suspendisse nibh. Suspendisse vitae magna eget odio amet mollis
+									justo facilisis quis. Sed sagittis mauris amet tellus gravida
+									lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
+									sit amet consequat sed dolore.</p>
+									<ul class="big-image-list">
+										<li>
+											<a href="#"><img src="images/pic3.jpg" alt="" class="left" /></a>
+											<h3>Magna Gravida Dolore</h3>
+											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
+											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
+											Maecenas eu arcu purus, phasellus fermentum elit.</p>
+										</li>
+										<li>
+											<a href="#"><img src="images/pic4.jpg" alt="" class="left" /></a>
+											<h3>Magna Gravida Dolore</h3>
+											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
+											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
+											Maecenas eu arcu purus, phasellus fermentum elit.</p>
+										</li>
+										<li>
+											<a href="#"><img src="images/pic5.jpg" alt="" class="left" /></a>
+											<h3>Magna Gravida Dolore</h3>
+											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
+											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
+											Maecenas eu arcu purus, phasellus fermentum elit.</p>
+										</li>
+									</ul>
+								</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<article class="blog-post">
+									<h2>Just another blog post</h2>
+									<a class="comments" href="#">33 comments</a>
+									<a href="#"><img src="images/pic6.jpg" alt="" class="top blog-post-image" /></a>
+									<h3>Magna Gravida Dolore</h3>
+									<p>Aenean non massa sapien. In hac habitasse platea dictumst.
+									Maecenas sodales purus et nulla sodales aliquam. Aenean ac
+									porttitor metus. In hac habitasse platea dictumst. Phasellus
+									blandit turpis in leo scelerisque mollis. Nulla venenatis
+									ipsum nec est porta rhoncus. Mauris sodales sed pharetra
+									nisi nec consectetur. Cras elit magna, hendrerit nec
+									consectetur in, sollicitudin vitae justo. Cras amet aliquet
+									Aliquam ligula turpis, feugiat id fermentum malesuada,
+									rutrum eget turpis. Mauris sodales sed pharetra nisi nec
+									consectetur. Cras elit magna, hendrerit nec consectetur
+									in sollicitudin vitae.</p>
+									<footer class="controls">
+										<a href="#" class="button">Continue Reading</a>
+									</footer>
+								</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<section>
+									<h2>How about a truckload of links?</h2>
+									<div>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-small">
+												<ul class="link-list">
+													<li><a href="#">Sed neque nisi consequat</a></li>
+													<li><a href="#">Dapibus sed mattis blandit</a></li>
+													<li><a href="#">Quis accumsan lorem</a></li>
+													<li><a href="#">Suspendisse varius ipsum</a></li>
+													<li><a href="#">Eget et amet consequat</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+												<ul class="link-list">
+													<li><a href="#">Quis accumsan lorem</a></li>
+													<li><a href="#">Sed neque nisi consequat</a></li>
+													<li><a href="#">Eget et amet consequat</a></li>
+													<li><a href="#">Dapibus sed mattis blandit</a></li>
+													<li><a href="#">Vitae magna sed dolore</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+												<ul class="link-list">
+													<li><a href="#">Sed neque nisi consequat</a></li>
+													<li><a href="#">Dapibus sed mattis blandit</a></li>
+													<li><a href="#">Quis accumsan lorem</a></li>
+													<li><a href="#">Suspendisse varius ipsum</a></li>
+													<li><a href="#">Eget et amet consequat</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+												<ul class="link-list">
+													<li><a href="#">Quis accumsan lorem</a></li>
+													<li><a href="#">Sed neque nisi consequat</a></li>
+													<li><a href="#">Eget et amet consequat</a></li>
+													<li><a href="#">Dapibus sed mattis blandit</a></li>
+													<li><a href="#">Vitae magna sed dolore</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<section>
+									<h2>Something of interest</h2>
+									<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
+									Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
+									mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
+									lorem ipsum dolor sit blandit.</p>
+									<footer class="controls">
+										<a href="#" class="button">Oh, please continue ....</a>
+									</footer>
+								</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
