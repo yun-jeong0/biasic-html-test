@@ -1,217 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #f0f0f0;
+        margin: 0;
+        font-size: 14px;
+        width: 1024px;
+        height: 576px;
+        margin: 0 auto;
+        overflow-y: auto;
+      }
 
-<!-- Header Section -->
-<header class="has-background-info-light">
-    <div class="container">
-        <nav class="navbar" role="navigation">
-            <div class="navbar-brand">
-                <div class="navbar-item">
-                    <img src="images/logo.png" alt="Logo">
-                </div>
-            </div>
-            
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <p class="has-text-grey">
-                        <span class="icon"><i class="fas fa-phone"></i></span>
-                        +44 (0)1777 712 400
-                    </p>
-                </div>
-                <div class="navbar-item">
-                    <div class="select is-small">
-                        <select>
-                            <option>Select Country</option>
-                            <option>United States</option>
-                            <option>United Kingdom</option>
-                            <option>Germany</option>
-                            <option>France</option>
-                            <option>Spain</option>
-                            <option>Italy</option>
-                            <option>Portugal</option>
-                            <option>Sweden</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="has-text-centered py-4">
-            <h1 class="title is-4">Demo website</h1>
-            <p class="is-size-5 has-text-grey-dark">Exceeding Customer Expectations Since 1984</p>
-            <p class="is-size-7">Monday to Friday 9am to 5pm</p>
-        </div>
-    </div>
-</header><!-- Navigation -->
-<nav class="navbar has-background-primary">
-    <div class="container">
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a href="index.html" class="navbar-item has-text-white">Home</a>
-                <a href="onecolumn.html" class="navbar-item has-text-white">Products</a>
-                <a href="twocolumn1.html" class="navbar-item has-text-white">Markets</a>
-                <a href="twocolumn2.html" class="navbar-item has-text-white">Resources</a>
-                <a href="threecolumn.html" class="navbar-item has-text-white">News & Events</a>
-            </div>
-        </div>
-    </div>
-</nav>
+      header,
+      nav,
+      main,
+      footer {
+        width: 100%;
+      }
 
-<!-- Main Content -->
-<section class="section">
-    <div class="container">
-        <div class="columns">
-            <!-- Left Content Area -->
-            <div class="column is-9">
-                <!-- Product Showcase -->
-                <div class="columns is-multiline">
-                    <div class="column is-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="images/ad1.jpg" alt="silicone sheeting">
-                                </figure>
-                            </div>
-                            <div class="card-content has-text-centered">
-                                <p class="title is-5">silicone sheeting</p>
-                                <p class="subtitle is-6 has-text-danger"><b>$7.99</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="images/ad2.jpg" alt="Definitive Rubber">
-                                </figure>
-                            </div>
-                            <div class="card-content has-text-centered">
-                                <p class="title is-5">Definitive Rubber</p>
-                                <p class="subtitle is-6 has-text-danger"><b>$10.99</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="images/ad3.jpg" alt="Industrial Rubber">
-                                </figure>
-                            </div>
-                            <div class="card-content has-text-centered">
-                                <p class="title is-5">Industrial Rubber</p>
-                                <p class="subtitle is-6 has-text-danger"><b>$4.99</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+      }
 
-                <!-- Sale Banner -->
-                <h2 id="headline" class="title is-3 has-text-centered my-5">★ Super sale 90% sale ★</h2>
+      .flex {
+        display: flex;
+        flex-direction: row;
+      }
 
-                <!-- FAQ Section -->
-                <div class="box">
-                    <h3 class="title is-4 has-background-grey-dark has-text-white p-3">FAQ</h3>
-                    <table class="table is-fullwidth">
-                        <thead>
-                            <tr>
-                                <th>title</th>
-                                <th>content</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Question1</td>
-                                <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE">industry for over 30 years, we have plenty of</a></td>
-                            </tr>
-                            <tr>
-                                <td>Question2</td>
-                                <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">rubber mouldings, gaskets, extrusions</a></td>
-                            </tr>
-                            <tr>
-                                <td>Question3</td>
-                                <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">dapibus sed mattis quis, rutrum accumsan sed</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div><!-- Right Sidebar -->
-<div class="column is-3">
-    <!-- Login Section -->
-    <div class="box login-container">
-        <h3 class="title is-5 has-background-grey-dark has-text-white p-3">LOGIN</h3>
-        <div class="field">
-            <input class="input" type="text" placeholder="ID">
-        </div>
-        <div class="field">
-            <input class="input" type="password" placeholder="Password">
-        </div>
-        <button id="loginButton" class="button is-link is-fullwidth">LOGIN</button>
-    </div>
+      img {
+        margin-right: 16px;
+      }
 
-    <!-- Newsletter Section -->
-    <div class="box mt-4">
-        <h3 class="title is-5 has-background-grey-dark has-text-white p-3">newsletter sub</h3>
-        <div class="field">
-            <input class="input" type="text" placeholder="Name">
-        </div>
-        <div class="field">
-            <input class="input" type="email" placeholder="Email">
-        </div>
-        <button id="subscribeButton" class="button is-link is-fullwidth">subscribe</button>
-    </div>
+      h1 {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
 
-    <!-- Gopro Section -->
-    <div class="box mt-4">
-        <h3 class="title is-5 has-background-grey-dark has-text-white p-3">Gopro</h3>
-        
-        <div class="box">
-            <h4 class="title is-5 has-background-grey-dark has-text-white p-3">Neon</h4>
-            <div class="content has-text-centered">
-                <p>1GB for just</p>
-                <p class="title is-4">$4.95</p>
-                <p>/Month.</p>
-            </div>
-        </div>
+      p {
+        font-size: 0.875rem;
+      }
 
-        <div class="box">
-            <h4 class="title is-5 has-background-grey-dark has-text-white p-3">Argon</h4>
-            <div class="content has-text-centered">
-                <p>10GB for just</p>
-                <p class="title is-4">$10.75</p>
-                <p>/Month.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+      nav a:last-child {
+        border-right: none;
+      }
 
-<!-- Banner Image -->
-<div class="container mt-5">
-    <figure class="image">
-        <img src="images/longad1.jpg" alt="Main Image">
-    </figure>
-</div>
-</section>
+      nav a:hover {
+        background-color: #666;
+      }
 
-<!-- Footer -->
-<footer class="footer has-background-grey-dark has-text-white">
-    <div class="content has-text-centered">
-        <p>Contact us | Find us | JFlex Rubber Products</p>
-        <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
-    </div>
-</footer>
+      .pr-4 {
+        padding-right: 16px;
+      }
 
-<script>
-[Original JavaScript code...]
-</script>
-</body>
+      .mb-4 {
+        margin-bottom: 16px;
+      }
+
+      .text-2xl {
+        font-size: 1.5rem;
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      a {
+        color: #0000ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #808080;
+        padding: 5px;
+      }
+
+      .nav-container {
+        padding: 10px;
+        text-align: center;
+        font-family: "Verdana", sans-serif;
+        font-size: 14px;
+      }
+      .nav-container a {
+        color: #000080;
+        margin: 0 10px;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: 1px solid #808080;
+        border-radius: 5px;
+        background: linear-gradient(to bottom, #ffffff, #d0d0d0);
+      }
+      .nav-container a:hover {
+        background: linear-gradient(to bottom, #d0d0d0, #ffffff);
+        border-color: #000080;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="border: none">
+      <table class="container" style="border: none; width: 100%; table-layout: fixed">
+        <tr class="flex" style="border: none">
+          <td style="border: none; width: 100px">
+            <img src="images/logo.png" alt="Logo" />
+          </td>
+          <td style="border: none; width: auto">
+            <h1>Demo website</h1>
+            <p>Exceeding Customer Expectations Since 1984</p>
+          </td>
+          <td style="border: none; text-align: right; vertical-align: top; width: 600px">
+            <table class="container" style="border: none; width: 100%">
+              <tr>
+                <!-- just for spacing no reason to excist -->
+                <td style="width: 150px; border: none"></td>
+                <!-- now use -->
+                <td style="border: none; text-align: right; vertical-align: top; padding-right: 15px">
+                  <p style="margin: 0">+44 (0)1777 712 400</p>
+                  <p style="margin: 5px 0 0 0; font-size: 0.9em">Monday to Friday 9am to 5pm</p>
+                </td>
+                <td style="border: none; text-align: right; vertical-align: top">
+                  <select style="border: none; margin-top: 5px; padding: 5px; width: 150px">
+                    <option>Select Country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Spain</option>
+                    <option>Italy</option>
+                    <option>Portugal</option>
+                    <option>Sweden</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <nav class="nav-container">
+      <a href="index.html">Home</a>
+      <a href="onecolumn.html">Products</a>
+      <a href="twocolumn1.html">Markets</a>
+      <a href="twocolumn2.html">Resources</a>
+      <a href="threecolumn.html">News & Events</a>
+    </nav>
+
+    <main>
+      <table class="flex" width="100%" style="border: none">
+        <tr>
+          <td class="pr-4" style="border: none">
+            <table width="100%" style="border: none; padding: 16px">
+              <tr>
+                <td style="border: none">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr align="center">
+                      <td width="33%" style="border: none; padding: 10px">
+                        <table
+                          width="100%"
+                          border="2"
+                          cellspacing="0"
+                          cellpadding="3"
+                          style="border-style: outset; margin: 10px"
+                        >
+                          <tr>
+                            <td align="center" style="display: flex; flex-direction: column; align-items: center">
+                              <img
+                                src="images/ad1.jpg"
+                                width="200"
+                                height="150"
+                                alt="silicone sheeting"
+                                style="margin: 0 auto"
+                              />
+                              <br />silicone sheeting<br />
+                              <font color="#FF0000"><b>7.99$</b></font>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="33%" style="border: none; padding: 10px">
+                        <table
+                          width="100%"
+                          border="2"
+                          cellspacing="0"
+                          cellpadding="10"
+                          style="border-style: outset; margin: 10px"
+                        >
+                          <tr>
+                            <td align="center" style="display: flex; flex-direction: column; align-items: center">
+                              <img
+                                src="images/ad2.jpg"
+                                width="200"
+                                height="150"
+                                alt="Definitive Rubber"
+                                style="margin: 0 auto"
+                              />
+                              <br />Definitive Rubber<br />
+                              <font color="#FF0000"><b>10.99$</b></font>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="33%" style="border: none; padding: 10px">
+                        <table
+                          width="100%"
+                          border="2"
+                          cellspacing="0"
+                          cellpadding="3"
+                          style="border-style: outset; margin: 10px"
+                        >
+                          <tr>
+                            <td align="center" style="display: flex; flex-direction: column; align-items: center">
+                              <img
+                                src="images/ad3.jpg"
+                                width="200"
+                                height="150"
+                                alt="Industrial Rubber"
+                                style="margin: 0 auto"
+                              />
+                              <br />Industrial Rubber<br />
+                              <font color="#FF0000"><b>4.99$</b></font>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: none">
+                  <h2 id="headline" class="text-2xl font-bold mb-2" style="text-align: left; margin-bottom: 50px">
+                    ★ Super sale 90% sale ★
+                  </h2>
+                  <table
+                    width="100%"
+                    border="2"
+                    cellspacing="1"
+                    cellpadding="40"
+                    bgcolor="#FFFFFF"
+                    style="margin-top: 60px; border-style: inset"
+                  >
+                    <tr bgcolor="#4a5568" style="color: white">
+                      <td><b>FAQ</b></td>
+                    </tr>
+                    <tr bgcolor="#FFFFFF">
+                      <td>
+                        <table width="100%" border="1" cellspacing="10" cellpadding="40" bgcolor="#FFFFFF">
+                          <tr bgcolor="#f0f0f0">
+                            <th style="width: 20%">title</th>
+                            <th style="width: 70%">content</th>
+                          </tr>
+                          <tr style="margin-top: 30px; margin-bottom: 30px">
+                            <td>Question1</td>
+                            <td>
+                              <a
+                                href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE"
+                                style="text-decoration: none; color: inherit"
+                                >industry for over 30 years, we have plenty of</a
+                              >
+                            </td>
+                          </tr>
+                          <tr style="margin-top: 10px; margin-bottom: 10px">
+                            <td>Question2</td>
+                            <td>
+                              <a
+                                href="https://www.renesas.com/en/applications/automotive/vehicle-control"
+                                style="text-decoration: none; color: inherit"
+                                >rubber mouldings, gaskets, extrusions</a
+                              >
+                            </td>
+                          </tr>
+                          <tr style="margin-top: 10px; margin-bottom: 10px">
+                            <td>Question3</td>
+                            <td>
+                              <a
+                                href="https://www.renesas.com/en/applications/automotive/vehicle-control"
+                                style="text-decoration: none; color: inherit"
+                                >dapibus sed mattis quis, rutrum accumsan sed</a
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="border: none">
+            <table
+              width="100%"
+              border="2"
+              cellspacing="1"
+              cellpadding="3"
+              bgcolor="#FFFFFF"
+              style="margin-top: 10px; border-style: inset"
+              class="login-container"
+            >
+              <tr bgcolor="#4a5568" style="color: white">
+                <td colspan="2"><b>LOGIN</b></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td>ID:</td>
+                <td><input type="text" placeholder="ID" style="width: 100%" /></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td>Password:</td>
+                <td><input type="password" placeholder="Password" style="width: 100%" /></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td colspan="2" align="center">
+                  <button
+                    id="loginButton"
+                    style="background-color: #4a5568; color: white; padding: 5px 20px; border: none; cursor: pointer"
+                  >
+                    LOGIN
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <table
+              width="100%"
+              border="2"
+              cellspacing="1"
+              cellpadding="3"
+              bgcolor="#FFFFFF"
+              style="margin-top: 10px; border-style: inset"
+            >
+              <tr bgcolor="#4a5568" style="color: white">
+                <td colspan="2"><b>newletter sub</b></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td>name:</td>
+                <td><input type="text" placeholder="Name" style="width: 100%" /></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td>email:</td>
+                <td><input type="email" placeholder="Email" style="width: 100%" /></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td colspan="2" align="center">
+                  <button
+                    id="subscribeButton"
+                    style="background-color: #4a5568; color: white; padding: 5px 20px; border: none; cursor: pointer"
+                  >
+                    subscribe
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <table
+              width="100%"
+              border="2"
+              cellspacing="1"
+              cellpadding="10"
+              bgcolor="#FFFFFF"
+              style="margin-top: 10px; border-style: inset"
+            >
+              <tr bgcolor="#4a5568" style="color: white">
+                <td><b>Gopro</b></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td>
+                  <table
+                    width="100%"
+                    border="2"
+                    cellspacing="1"
+                    cellpadding="10"
+                    bgcolor="#FFFFFF"
+                    style="margin-top: 10px; border-style: inset"
+                  >
+                    <tr bgcolor="#4a5568" style="color: white">
+                      <td colspan="2"><b>Neon</b></td>
+                    </tr>
+                    <tr bgcolor="#FFFFFF">
+                      <td style="width: 100%"><br />1GB for just<br /><br /><br /><b>$4.95</b>/Month.<br /><br /></td>
+                    </tr>
+                  </table>
+                  <table
+                    width="100%"
+                    border="2"
+                    cellspacing="1"
+                    cellpadding="10"
+                    bgcolor="#FFFFFF"
+                    style="margin-top: 10px; border-style: inset"
+                  >
+                    <tr bgcolor="#4a5568" style="color: white">
+                      <td colspan="2"><b>Argon</b></td>
+                    </tr>
+                    <tr bgcolor="#FFFFFF">
+                      <td style="width: 100%"><br />10GB for just<br /><br /><br /><b>$10.75</b>/Month.<br /><br /></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="flex" width="100%" style="border: none">
+        <tr>
+          <td style="display: flex; align-items: center; justify-content: center; border: none">
+            <img src="images/longad1.jpg" alt="Main Image" style="width: 1000px; height: 300px" />
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <footer style="background-color: #4a5568; color: white; padding: 16px">
+      <table class="container" style="text-align: center; width: 100%; border-collapse: collapse">
+        <tr>
+          <td style="border: none; text-align: center; width: 100%">
+            <p style="margin: 0 auto; width: fit-content">Contact us | Find us | JFlex Rubber Products</p>
+            <p style="margin: 0 auto; width: fit-content">Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginButton = document.querySelector("#loginButton");
+        const idInput = document.querySelector('input[placeholder="ID"]');
+        const pwInput = document.querySelector('input[placeholder="Password"]');
+        const loginContainer = document.querySelector(".login-container");
+
+        if (loginButton && idInput && pwInput && loginContainer) {
+          loginButton.addEventListener("click", function () {
+            const id = idInput.value;
+            const pw = pwInput.value;
+            if (id === "user" && pw === "1234") {
+              alert("인증되셨습니다");
+              loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
+                            <div style="background-color: white; color: black; padding: 8px; border-radius: 4px; display: inline-block;">
+                                <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
+                            </div>`;
+            } else {
+              alert("아이디 또는 비밀번호가 틀렸습니다");
+            }
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const subscribeButton = document.querySelector("#subscribeButton");
+        const nameInput = document.querySelector('input[placeholder="Name"]');
+        const emailInput = document.querySelector('input[placeholder="Email"]');
+
+        if (subscribeButton && nameInput && emailInput) {
+          subscribeButton.addEventListener("click", function () {
+            const name = nameInput.value;
+            const email = emailInput.value;
+            if (name && email) {
+              const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
+              if (confirmation) {
+                alert("감사합니다");
+              }
+            } else {
+              alert("이름과 이메일을 입력해 주시겠습니까?");
+            }
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = ["images/longad1.jpg", "images/longad2.jpg", "images/longad3.jpg"];
+        let currentIndex = 0;
+        const mainImage = document.querySelector('img[alt="Main Image"]');
+
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          mainImage.src = images[currentIndex];
+        }, 3000);
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("img");
+        const modal = document.createElement("div");
+        const modalImg = document.createElement("img");
+        const closeBtn = document.createElement("span");
+
+        modal.style.display = "none";
+        modal.style.position = "fixed";
+        modal.style.zIndex = "1000";
+        modal.style.left = "0";
+        modal.style.top = "0";
+        modal.style.width = "100%";
+        modal.style.height = "100%";
+        modal.style.overflow = "auto";
+        modal.style.backgroundColor = "rgba(0,0,0,0.8)";
+        modal.style.justifyContent = "center";
+        modal.style.alignItems = "center";
+
+        modalImg.style.maxWidth = "100%";
+        modalImg.style.maxHeight = "100%";
+        modalImg.style.transform = "scale(2)";
+
+        closeBtn.style.position = "absolute";
+        closeBtn.style.top = "10px";
+        closeBtn.style.right = "25px";
+        closeBtn.style.color = "#fff";
+        closeBtn.style.fontSize = "35px";
+        closeBtn.style.fontWeight = "bold";
+        closeBtn.style.cursor = "pointer";
+        closeBtn.innerHTML = "&times;";
+
+        modal.appendChild(modalImg);
+        modal.appendChild(closeBtn);
+        document.body.appendChild(modal);
+
+        images.forEach((img) => {
+          img.addEventListener("click", function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+          });
+        });
+
+        closeBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.querySelector("#headline");
+        const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"];
+        let colorIndex = 0;
+
+        setInterval(() => {
+          textElement.style.color = colors[colorIndex];
+          colorIndex = (colorIndex + 1) % colors.length;
+        }, 500);
+      });
+    </script>
+  </body>
 </html>
