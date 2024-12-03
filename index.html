@@ -1,169 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Demo website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Demo Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-sm">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo and Company Info -->
-                <div class="flex items-center">
-                    <img src="images/logo.png" alt="Logo" class="w-40 h-8 mr-4"/>
-                    <div>
-                        <h1 class="text-xl font-bold text-gray-800">Demo website</h1>
-                        <p class="text-sm text-gray-600">Exceeding Customer Expectations Since 1984</p>
+<body>
+    <!-- Header Section -->
+    <header class="hero is-primary">
+        <div class="hero-head">
+            <nav class="navbar is-primary">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <figure class="image is-128x64 my-2">
+                            <img src="images/logo.png" alt="Logo">
+                        </figure>
+                        <div class="navbar-item">
+                            <p class="subtitle is-6 has-text-white">Exceeding Customer Expectations Since 1984</p>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <span class="icon"><i class="fas fa-phone"></i></span>
+                                    <span>+44 (0)1777 712 400</span>
+                                </p>
+                                <p class="control">
+                                    <span class="icon"><i class="fas fa-clock"></i></span>
+                                    <span>Monday to Friday 9am to 5pm</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div class="select">
+                                <select>
+                                    <option>Select Country</option>
+                                    <option>United States</option>
+                                    <option>United Kingdom</option>
+                                    <option>Germany</option>
+                                    <option>France</option>
+                                    <option>Spain</option>
+                                    <option>Italy</option>
+                                    <option>Portugal</option>
+                                    <option>Sweden</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Contact Info and Country Select -->
-                <div class="flex items-center space-x-8">
-                    <div class="text-right">
-                        <p class="text-gray-800">+44 (0)1777 712 400</p>
-                        <p class="text-sm text-gray-600">Monday to Friday 9am to 5pm</p>
-                    </div>
-                    <select class="px-4 py-2 border rounded-lg">
-                        <option>Select Country</option>
-                        <option>United States</option>
-                        <option>United Kingdom</option>
-                        <option>Germany</option>
-                        <option>France</option>
-                        <option>Spain</option>
-                        <option>Italy</option>
-                        <option>Portugal</option>
-                        <option>Sweden</option>
-                    </select>
-                </div>
-            </div>
+            </nav>
         </div>
     </header><!-- Navigation -->
-<nav class="bg-gray-100 shadow-sm mb-8">
-    <div class="container mx-auto px-4">
-        <div class="flex justify-center space-x-4 py-4">
-            <a href="index.html" class="px-4 py-2 text-gray-600 hover:text-yellow-600 transition-colors">Home</a>
-            <a href="onecolumn.html" class="px-4 py-2 text-gray-600 hover:text-yellow-600 transition-colors">Products</a>
-            <a href="twocolumn1.html" class="px-4 py-2 text-gray-600 hover:text-yellow-600 transition-colors">Markets</a>
-            <a href="twocolumn2.html" class="px-4 py-2 text-gray-600 hover:text-yellow-600 transition-colors">Resources</a>
-            <a href="threecolumn.html" class="px-4 py-2 text-gray-600 hover:text-yellow-600 transition-colors">News & Events</a>
+    <nav class="navbar is-info">
+        <div class="container">
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="onecolumn.html" class="navbar-item">Products</a>
+                    <a href="twocolumn1.html" class="navbar-item">Markets</a>
+                    <a href="twocolumn2.html" class="navbar-item">Resources</a>
+                    <a href="threecolumn.html" class="navbar-item">News & Events</a>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Main Content -->
-<main class="container mx-auto px-4 py-8">
-    <div class="grid grid-cols-3 gap-8 mb-12">
-        <!-- Product Cards -->
-        <div class="bg-white rounded-xl shadow-lg p-4 text-center">
-            <img src="images/ad1.jpg" alt="silicone sheeting" class="w-full h-40 object-cover mb-4"/>
-            <p class="text-gray-800 mb-2">silicone sheeting</p>
-            <p class="text-red-600 font-bold">7.99$</p>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-4 text-center">
-            <img src="images/ad2.jpg" alt="Definitive Rubber" class="w-full h-40 object-cover mb-4"/>
-            <p class="text-gray-800 mb-2">Definitive Rubber</p>
-            <p class="text-red-600 font-bold">10.99$</p>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-4 text-center">
-            <img src="images/ad3.jpg" alt="Industrial Rubber" class="w-full h-40 object-cover mb-4"/>
-            <p class="text-gray-800 mb-2">Industrial Rubber</p>
-            <p class="text-red-600 font-bold">4.99$</p>
-        </div>
-    </div><div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-12">
-        <!-- Main Content and FAQ -->
-        <div class="lg:col-span-2">
-            <h2 id="headline" class="text-3xl font-bold text-center mb-8 animate-pulse">★ Super sale 90% sale ★</h2>
-            
-            <!-- FAQ Section -->
-            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
-                <h3 class="text-xl font-bold mb-4 text-gray-800">FAQ</h3>
-                <div class="space-y-4">
-                    <div class="grid grid-cols-5 gap-4 bg-gray-50 p-4 rounded">
-                        <div class="font-bold">Question1</div>
-                        <div class="col-span-4">
-                            <a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" class="text-gray-700 hover:text-yellow-600">
-                                industry for over 30 years, we have plenty of
-                            </a>
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <!-- Product Showcase -->
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/ad1.jpg" alt="silicone sheeting">
+                            </figure>
                         </div>
-                    </div>
-                    <div class="grid grid-cols-5 gap-4 bg-gray-50 p-4 rounded">
-                        <div class="font-bold">Question2</div>
-                        <div class="col-span-4">
-                            <a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-gray-700 hover:text-yellow-600">
-                                rubber mouldings, gaskets, extrusions
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-5 gap-4 bg-gray-50 p-4 rounded">
-                        <div class="font-bold">Question3</div>
-                        <div class="col-span-4">
-                            <a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-gray-700 hover:text-yellow-600">
-                                dapibus sed mattis quis, rutrum accumsan sed
-                            </a>
+                        <div class="card-content">
+                            <p class="title is-4">Silicone Sheeting</p>
+                            <p class="subtitle is-6 has-text-primary">$7.99</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Sidebar -->
-        <div class="space-y-8">
-            <!-- Login Section -->
-            <div class="bg-white rounded-xl shadow-lg p-6 login-container">
-                <h3 class="text-xl font-bold mb-4 text-gray-800">LOGIN</h3>
-                <div class="space-y-4">
-                    <input type="text" placeholder="ID" class="w-full px-4 py-2 border rounded"/>
-                    <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded"/>
-                    <button id="loginButton" class="w-full bg-yellow-600 text-white py-2 rounded hover:bg-yellow-700">
-                        LOGIN
-                    </button>
-                </div>
-            </div>
-
-            <!-- Newsletter Section -->
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h3 class="text-xl font-bold mb-4 text-gray-800">Newsletter Subscription</h3>
-                <div class="space-y-4">
-                    <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded"/>
-                    <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded"/>
-                    <button id="subscribeButton" class="w-full bg-yellow-600 text-white py-2 rounded hover:bg-yellow-700">
-                        Subscribe
-                    </button>
-                </div>
-            </div>
-
-            <!-- Pricing Section -->
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h3 class="text-xl font-bold mb-4 text-gray-800">Gopro</h3>
-                <div class="space-y-4">
-                    <div class="bg-gray-50 p-4 rounded">
-                        <h4 class="font-bold text-gray-800 mb-2">Neon</h4>
-                        <p class="text-gray-600">1GB for just</p>
-                        <p class="text-2xl font-bold text-yellow-600">$4.95</p>
-                        <p class="text-gray-600">per Month</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded">
-                        <h4 class="font-bold text-gray-800 mb-2">Argon</h4>
-                        <p class="text-gray-600">10GB for just</p>
-                        <p class="text-2xl font-bold text-yellow-600">$10.75</p>
-                        <p class="text-gray-600">per Month</p>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/ad2.jpg" alt="Definitive Rubber">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">Definitive Rubber</p>
+                            <p class="subtitle is-6 has-text-primary">$10.99</p>
+                        </div>
                     </div>
                 </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/ad3.jpg" alt="Industrial Rubber">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">Industrial Rubber</p>
+                            <p class="subtitle is-6 has-text-primary">$4.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Promotion Banner -->
+            <div class="notification is-warning my-6">
+                <h2 id="headline" class="title has-text-centered">★ Super sale 90% sale ★</h2>
             </div>
-        </div>
-    </div>
 
-    <!-- Banner Image -->
-    <div class="w-full mb-12">
-        <img src="images/longad1.jpg" alt="Main Image" class="w-full h-64 object-cover rounded-xl"/>
-    </div>
+            <!-- FAQ and Login Sections -->
+            <div class="columns">
+                <div class="column is-8">
+                    <div class="box">
+                        <h3 class="title is-4">FAQ</h3>
+                        <div class="content">
+                            <div class="notification">
+                                <strong>Question1:</strong>
+                                <a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE">
+                                    industry for over 30 years, we have plenty of
+                                </a>
+                            </div>
+                            <div class="notification">
+                                <strong>Question2:</strong>
+                                <a href="https://www.renesas.com/en/applications/automotive/vehicle-control">
+                                    rubber mouldings, gaskets, extrusions
+                                </a>
+                            </div>
+                            <div class="notification">
+                                <strong>Question3:</strong>
+                                <a href="https://www.renesas.com/en/applications/automotive/vehicle-control">
+                                    dapibus sed mattis quis, rutrum accumsan sed
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="box login-container">
+                        <h3 class="title is-4">LOGIN</h3>
+                        <div class="field">
+                            <input class="input" type="text" placeholder="ID">
+                        </div>
+                        <div class="field">
+                            <input class="input" type="password" placeholder="Password">
+                        </div>
+                        <button id="loginButton" class="button is-primary is-fullwidth">LOGIN</button>
+                    </div>
+
+                    <!-- Newsletter Section -->
+                    <div class="box">
+                        <h3 class="title is-4">Newsletter Subscription</h3>
+                        <div class="field">
+                            <input class="input" type="text" placeholder="Name">
+                        </div>
+                        <div class="field">
+                            <input class="input" type="email" placeholder="Email">
+                        </div>
+                        <button id="subscribeButton" class="button is-primary is-fullwidth">Subscribe</button>
+                    </div>
+
+                    <!-- Pricing Section -->
+                    <div class="box">
+                        <h3 class="title is-4">Gopro</h3>
+                        <div class="pricing-table">
+                            <div class="pricing-plan">
+                                <div class="plan-header">Neon</div>
+                                <div class="plan-price">
+                                    <span class="plan-price-amount">$4.95</span>
+                                </div>
+                                <div class="plan-items">
+                                    <div class="plan-item">1GB for just</div>
+                                    <div class="plan-item">per Month</div>
+                                </div>
+                            </div>
+                            <div class="pricing-plan">
+                                <div class="plan-header">Argon</div>
+                                <div class="plan-price">
+                                    <span class="plan-price-amount">$10.75</span>
+                                </div>
+                                <div class="plan-items">
+                                    <div class="plan-item">10GB for just</div>
+                                    <div class="plan-item">per Month</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Image -->
+            <figure class="image is-3by1 my-6">
+                <img src="images/longad1.jpg" alt="Main Image">
+            </figure>
+
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 mt-12 py-8">
-        <div class="container mx-auto px-4 text-center">
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container has-text-centered">
             <p class="mb-2">Contact us | Find us | JFlex Rubber Products</p>
             <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
         </div>
