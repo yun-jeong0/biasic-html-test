@@ -1,220 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Demo Website - Exceeding Customer Expectations Since 1984</title>
+    <title>Demo Website - Since 1984</title>
+    <script src='https://cdn.tailwindcss.com'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        :root {
-            --primary-color: #4361ee;
-            --secondary-color: #3f37c9;
-            --accent-color: #4895ef;
-            --light-bg: #f8f9fa;
-        }
-        .navbar-custom {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        }
-        .feature-card {
-            transition: transform 0.3s ease;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        .sale-banner {
-            background: linear-gradient(45deg, #ff6b6b, #f06595);
-            color: white;
-        }
-    </style>
 </head>
-<body>
+<body class="bg-gray-50">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Logo" style="width: 50px; height: 50px" class="bg-light rounded p-2">
-            </a>
-            <div class="d-flex align-items-center text-white me-auto ms-3">
-                <div>
-                    <small>+44 (0)1777 712 400</small><br>
-                    <small>Monday to Friday 9am to 5pm</small>
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-2 text-sm">
+                <div class="flex items-center gap-2">
+                    <img src="images/logo.png" alt="Logo" class="w-12 h-12">
+                    <div>
+                        <span>+44 (0)1777 712 400</span>
+                        <span class="ml-2">Monday to Friday 9am to 5pm</span>
+                    </div>
                 </div>
+                <select class="bg-transparent border border-white/30 rounded px-2 py-1">
+                    <option>Select Country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Spain</option>
+                    <option>Italy</option>
+                    <option>Portugal</option>
+                    <option>Sweden</option>
+                </select>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="onecolumn.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="twocolumn1.html">Markets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="twocolumn2.html">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="threecolumn.html">News & Events</a></li>
-                </ul>
-                <div class="ms-auto">
-                    <select class="form-select">
-                        <option>Select Country</option>
-                        <option>United States</option>
-                        <option>United Kingdom</option>
-                        <option>Germany</option>
-                        <option>France</option>
-                        <option>Spain</option>
-                        <option>Italy</option>
-                        <option>Portugal</option>
-                        <option>Sweden</option>
-                    </select>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex gap-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="onecolumn.html" class="text-gray-600 hover:text-blue-600 transition">Products</a>
+                    <a href="twocolumn1.html" class="text-gray-600 hover:text-blue-600 transition">Markets</a>
+                    <a href="twocolumn2.html" class="text-gray-600 hover:text-blue-600 transition">Resources</a>
+                    <a href="threecolumn.html" class="text-gray-600 hover:text-blue-600 transition">News & Events</a>
                 </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Sale Banner -->
-    <div class="sale-banner p-2 text-center" id="headline">
-        <h6 class="m-0">★ Super sale 90% sale ★</h6>
-    </div><div class="container py-5">
-        <div class="row">
-            <!-- Left Sidebar -->
-            <div class="col-lg-3">
+    </nav><!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Sidebar -->
+            <div class="lg:col-span-1 space-y-6">
                 <!-- Login Form -->
-                <div class="card shadow-sm mb-4 login-container">
-                    <div class="card-body">
-                        <h5 class="card-title">LOGIN</h5>
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="ID">
-                            </div>
-                            <div class="mb-3">
-                                <input type="password" class="form-control" placeholder="Password">
-                            </div>
-                            <button type="button" id="loginButton" class="btn btn-primary w-100">LOGIN</button>
-                        </form>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-6 login-container">
+                    <h2 class="text-xl font-bold mb-4">LOGIN</h2>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="ID" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button type="button" id="loginButton" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">LOGIN</button>
+                    </form>
                 </div>
 
                 <!-- Newsletter -->
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Newsletter Subscription</h5>
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <button type="button" id="subscribeButton" class="btn btn-success w-100">Subscribe</button>
-                        </form>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">Newsletter Subscription</h2>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button type="button" id="subscribeButton" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Subscribe</button>
+                    </form>
                 </div>
             </div>
 
-            <!-- Main Content -->
-            <div class="col-lg-9">
+            <!-- Main Content Area -->
+            <div class="lg:col-span-3 space-y-8">
+                <!-- Alert Banner -->
+                <div class="bg-yellow-100 border-y border-yellow-200 p-3 text-center" id="headline">
+                    ★ Super sale 90% sale ★
+                </div>
+
                 <!-- Featured Products -->
-                <h3 class="mb-4">Featured Products</h3>
-                <div class="row g-4 mb-5">
-                    <div class="col-md-4">
-                        <div class="card feature-card h-100">
-                            <div class="bg-light p-4">
-                                <img src="images/ad1.jpg" alt="silicone sheeting" class="card-img-top">
+                <section>
+                    <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Product 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/ad1.jpg" alt="silicone sheeting" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold">Silicone Sheeting</h3>
+                                <p class="text-red-600 font-bold mt-2">7.99$</p>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Silicone Sheeting</h5>
-                                <p class="card-text text-primary fw-bold">$7.99</p>
-                                <button class="btn btn-outline-primary">Learn More</button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/ad2.jpg" alt="Definitive Rubber" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold">Definitive Rubber</h3>
+                                <p class="text-red-600 font-bold mt-2">10.99$</p>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/ad3.jpg" alt="Industrial Rubber" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold">Industrial Rubber</h3>
+                                <p class="text-red-600 font-bold mt-2">4.99$</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card feature-card h-100">
-                            <div class="bg-light p-4">
-                                <img src="images/ad2.jpg" alt="Definitive Rubber" class="card-img-top">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Definitive Rubber</h5>
-                                <p class="card-text text-primary fw-bold">$10.99</p>
-                                <button class="btn btn-outline-primary">Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card feature-card h-100">
-                            <div class="bg-light p-4">
-                                <img src="images/ad3.jpg" alt="Industrial Rubber" class="card-img-top">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Industrial Rubber</h5>
-                                <p class="card-text text-primary fw-bold">$4.99</p>
-                                <button class="btn btn-outline-primary">Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- FAQ Section -->
-                <h3 class="mb-4">FAQ</h3>
-                <div class="accordion mb-5" id="faqAccordion">
-                    <table class="table">
+                </section><!-- FAQ Section -->
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold mb-6">FAQ</h2>
+                    <table class="w-full">
                         <thead>
-                            <tr>
-                                <th style="width: 20%">title</th>
-                                <th style="width: 70%">content</th>
+                            <tr class="border-b">
+                                <th class="w-1/5 py-2 text-left">title</th>
+                                <th class="w-4/5 py-2 text-left">content</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Question1</td>
-                                <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE">industry for over 30 years, we have plenty of</a></td>
+                            <tr class="border-b">
+                                <td class="py-3">Question1</td>
+                                <td class="py-3"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" class="text-blue-600 hover:text-blue-800">industry for over 30 years, we have plenty of</a></td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3">Question2</td>
+                                <td class="py-3"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-blue-600 hover:text-blue-800">rubber mouldings, gaskets, extrusions</a></td>
                             </tr>
                             <tr>
-                                <td>Question2</td>
-                                <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">rubber mouldings, gaskets, extrusions</a></td>
-                            </tr>
-                            <tr>
-                                <td>Question3</td>
-                                <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">dapibus sed mattis quis, rutrum accumsan sed</a></td>
+                                <td class="py-3">Question3</td>
+                                <td class="py-3"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-blue-600 hover:text-blue-800">dapibus sed mattis quis, rutrum accumsan sed</a></td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </section>
 
-                <!-- Image Section -->
-                <div class="card bg-light border-0">
-                    <div class="card-body p-5">
-                        <div class="row align-items-center">
-                            <div class="col-md-12">
-                                <img src="images/longad1.jpg" alt="Main Image" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
-                            </div>
-                        </div>
-                    </div>
+                <!-- Image Carousel -->
+                <div class="relative mb-5">
+                    <img src="images/longad1.jpg" alt="Main Image" class="w-full h-[300px] object-cover">
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Contact us</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Find us</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">JFlex Rubber Products</a></li>
-                    </ul>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Micrasil</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Suba-Flex</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Impacta-Flex</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">V-Sil</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">V-Silc</a></li>
-                    </ul>
-                </div>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="mb-2">Contact us | Find us | JFlex Rubber Products</p>
+                <p class="text-gray-400">Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
             </div>
         </div>
     </footer>
