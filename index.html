@@ -1,143 +1,140 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Demo Website - Since 1984</title>
-    <script src='https://cdn.tailwindcss.com'></script>
+    <title>Modern Industrial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-2 text-sm">
-                <div class="flex items-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                    </svg>
-                    <span>+44 (0)1777 712 400</span>
-                    <span class="ml-2">Monday to Friday 9am to 5pm</span>
-                </div>
-                <select class="bg-transparent border border-white/30 rounded px-2 py-1">
-                    <option>Select Country</option>
-                    <option>United States</option>
-                    <option>United Kingdom</option>
-                    <option>Germany</option>
-                    <option>France</option>
-                    <option>Spain</option>
-                    <option>Italy</option>
-                    <option>Portugal</option>
-                    <option>Sweden</option>
-                </select>
+    <header class="bg-indigo-600 text-white py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-sm">
+                <span class="mr-4">📞 +44 (0)1777 712 400</span>
+                <span>⏰ Monday to Friday 9am to 5pm</span>
             </div>
+            <select class="bg-indigo-700 text-white px-4 py-1 rounded-lg border border-indigo-400">
+                <option>Select Country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Spain</option>
+                <option>Italy</option>
+                <option>Portugal</option>
+                <option>Sweden</option>
+            </select>
         </div>
-    </header><!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex gap-6">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
-                    <a href="onecolumn.html" class="text-gray-600 hover:text-blue-600 transition">Products</a>
-                    <a href="twocolumn1.html" class="text-gray-600 hover:text-blue-600 transition">Markets</a>
-                    <a href="twocolumn2.html" class="text-gray-600 hover:text-blue-600 transition">Resources</a>
-                    <a href="threecolumn.html" class="text-gray-600 hover:text-blue-600 transition">News & Events</a>
+            <div class="flex justify-between items-center h-16">
+                <div class="flex space-x-8">
+                    <a href="index.html" class="text-indigo-600 hover:text-indigo-800">Home</a>
+                    <a href="onecolumn.html" class="text-gray-600 hover:text-indigo-600">Products</a>
+                    <a href="twocolumn1.html" class="text-gray-600 hover:text-indigo-600">Markets</a>
+                    <a href="twocolumn2.html" class="text-gray-600 hover:text-indigo-600">Resources</a>
+                    <a href="threecolumn.html" class="text-gray-600 hover:text-indigo-600">News & Events</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
+    <!-- Sale Banner -->
+    <div class="bg-gradient-to-r from-yellow-200 to-yellow-100 py-3 text-center" id="headline">
+        <p class="text-amber-800 font-medium">⭐ Super sale 90% sale ⭐</p>
+    </div><!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <!-- Sidebar -->
             <div class="lg:col-span-1 space-y-6">
                 <!-- Login Form -->
-                <div class="bg-white rounded-lg shadow-md p-6 login-container">
+                <div class="bg-white rounded-xl shadow-md p-6 login-container">
                     <h2 class="text-xl font-bold mb-4">LOGIN</h2>
                     <form class="space-y-4">
-                        <input type="text" placeholder="ID" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <button type="button" id="loginButton" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">LOGIN</button>
+                        <input type="text" placeholder="ID" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-400">
+                        <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-400">
+                        <button type="button" id="loginButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition">LOGIN</button>
                     </form>
-                </div><!-- Newsletter -->
-                <div class="bg-white rounded-lg shadow-md p-6">
+                </div>
+
+                <!-- Newsletter -->
+                <div class="bg-white rounded-xl shadow-md p-6">
                     <h2 class="text-xl font-bold mb-4">Newsletter Subscription</h2>
                     <form class="space-y-4">
-                        <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <button type="button" id="subscribeButton" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Subscribe</button>
+                        <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-400">
+                        <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-400">
+                        <button type="button" id="subscribeButton" class="w-full bg-emerald-600 text-white py-2 rounded-lg hover:bg-emerald-700 transition">Subscribe</button>
                     </form>
                 </div>
             </div>
 
             <!-- Main Content Area -->
-            <div class="lg:col-span-3 space-y-8">
-                <!-- Alert Banner -->
-                <div class="bg-yellow-100 border-y border-yellow-200 p-3 text-center" id="headline">
-                    ★ Super sale 90% sale ★
-                </div>
-
+            <div class="lg:col-span-3">
                 <!-- Featured Products -->
-                <section>
-                    <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- Product 1 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img src="images/ad1.jpg" alt="silicone sheeting" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-semibold">Silicone Sheeting</h3>
-                                <p class="text-red-600 font-bold mt-2">7.99$</p>
-                            </div>
-                        </div>
-
-                        <!-- Product 2 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img src="images/ad2.jpg" alt="Definitive Rubber" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-semibold">Definitive Rubber</h3>
-                                <p class="text-red-600 font-bold mt-2">10.99$</p>
-                            </div>
-                        </div>
-
-                        <!-- Product 3 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img src="images/ad3.jpg" alt="Industrial Rubber" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-semibold">Industrial Rubber</h3>
-                                <p class="text-red-600 font-bold mt-2">4.99$</p>
-                            </div>
+                <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                        <img src="images/ad1.jpg" alt="silicone sheeting" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold">Silicone Sheeting</h3>
+                            <p class="text-indigo-600 font-bold mt-2">$7.99</p>
                         </div>
                     </div>
-                </section><!-- FAQ Section -->
-                <section class="bg-white rounded-lg shadow-md p-6">
+
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                        <img src="images/ad2.jpg" alt="Definitive Rubber" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold">Definitive Rubber</h3>
+                            <p class="text-indigo-600 font-bold mt-2">$10.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                        <img src="images/ad3.jpg" alt="Industrial Rubber" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold">Industrial Rubber</h3>
+                            <p class="text-indigo-600 font-bold mt-2">$4.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="bg-white rounded-xl shadow-md p-6 mb-8">
                     <h2 class="text-2xl font-bold mb-6">FAQ</h2>
                     <div class="space-y-4">
                         <div class="border-b pb-4">
-                            <h3 class="font-semibold">Question1</h3>
-                            <p class="text-gray-600 mt-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" class="text-blue-600 hover:text-blue-800">industry for over 30 years, we have plenty of</a></p>
+                            <h3 class="font-semibold mb-2">Question 1</h3>
+                            <p class="text-gray-600"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" class="text-indigo-600 hover:text-indigo-800">industry for over 30 years, we have plenty of</a></p>
                         </div>
                         <div class="border-b pb-4">
-                            <h3 class="font-semibold">Question2</h3>
-                            <p class="text-gray-600 mt-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-blue-600 hover:text-blue-800">rubber mouldings, gaskets, extrusions</a></p>
+                            <h3 class="font-semibold mb-2">Question 2</h3>
+                            <p class="text-gray-600"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-indigo-600 hover:text-indigo-800">rubber mouldings, gaskets, extrusions</a></p>
                         </div>
                         <div class="pb-4">
-                            <h3 class="font-semibold">Question3</h3>
-                            <p class="text-gray-600 mt-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-blue-600 hover:text-blue-800">dapibus sed mattis quis, rutrum accumsan sed</a></p>
+                            <h3 class="font-semibold mb-2">Question 3</h3>
+                            <p class="text-gray-600"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-indigo-600 hover:text-indigo-800">dapibus sed mattis quis, rutrum accumsan sed</a></p>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 <!-- Free Delivery Section -->
-                <section class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg shadow-md p-8 text-white">
+                <div class="bg-indigo-100 rounded-xl p-6">
                     <div class="relative">
                         <img src="images/longad1.jpg" alt="Main Image" class="w-full h-[300px] object-cover rounded">
                     </div>
-                </section>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
@@ -151,124 +148,124 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const loginButton = document.querySelector("#loginButton");
-        const idInput = document.querySelector('input[placeholder="ID"]');
-        const pwInput = document.querySelector('input[placeholder="Password"]');
-        const loginContainer = document.querySelector(".login-container");
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginButton = document.querySelector("#loginButton");
+            const idInput = document.querySelector('input[placeholder="ID"]');
+            const pwInput = document.querySelector('input[placeholder="Password"]');
+            const loginContainer = document.querySelector(".login-container");
 
-        if (loginButton && idInput && pwInput && loginContainer) {
-          loginButton.addEventListener("click", function () {
-            const id = idInput.value;
-            const pw = pwInput.value;
-            if (id === "user" && pw === "1234") {
-              alert("인증되셨습니다");
-              loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
+            if (loginButton && idInput && pwInput && loginContainer) {
+                loginButton.addEventListener("click", function () {
+                    const id = idInput.value;
+                    const pw = pwInput.value;
+                    if (id === "user" && pw === "1234") {
+                        alert("인증되셨습니다");
+                        loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
                             <div style="background-color: white; color: black; padding: 8px; border-radius: 4px; display: inline-block;">
                                 <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
                             </div>`;
-            } else {
-              alert("아이디 또는 비밀번호가 틀렸습니다");
+                    } else {
+                        alert("아이디 또는 비밀번호가 틀렸습니다");
+                    }
+                });
             }
-          });
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const subscribeButton = document.querySelector("#subscribeButton");
-        const nameInput = document.querySelector('input[placeholder="Name"]');
-        const emailInput = document.querySelector('input[placeholder="Email"]');
-
-        if (subscribeButton && nameInput && emailInput) {
-          subscribeButton.addEventListener("click", function () {
-            const name = nameInput.value;
-            const email = emailInput.value;
-            if (name && email) {
-              const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
-              if (confirmation) {
-                alert("감사합니다");
-              }
-            } else {
-              alert("이름과 이메일을 입력해 주시겠습니까?");
-            }
-          });
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = ["images/longad1.jpg", "images/longad2.jpg", "images/longad3.jpg"];
-        let currentIndex = 0;
-        const mainImage = document.querySelector('img[alt="Main Image"]');
-
-        setInterval(() => {
-          currentIndex = (currentIndex + 1) % images.length;
-          mainImage.src = images[currentIndex];
-        }, 3000);
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll("img");
-        const modal = document.createElement("div");
-        const modalImg = document.createElement("img");
-        const closeBtn = document.createElement("span");
-
-        modal.style.display = "none";
-        modal.style.position = "fixed";
-        modal.style.zIndex = "1000";
-        modal.style.left = "0";
-        modal.style.top = "0";
-        modal.style.width = "100%";
-        modal.style.height = "100%";
-        modal.style.overflow = "auto";
-        modal.style.backgroundColor = "rgba(0,0,0,0.8)";
-        modal.style.justifyContent = "center";
-        modal.style.alignItems = "center";
-
-        modalImg.style.maxWidth = "100%";
-        modalImg.style.maxHeight = "100%";
-        modalImg.style.transform = "scale(2)";
-
-        closeBtn.style.position = "absolute";
-        closeBtn.style.top = "10px";
-        closeBtn.style.right = "25px";
-        closeBtn.style.color = "#fff";
-        closeBtn.style.fontSize = "35px";
-        closeBtn.style.fontWeight = "bold";
-        closeBtn.style.cursor = "pointer";
-        closeBtn.innerHTML = "&times;";
-
-        modal.appendChild(modalImg);
-        modal.appendChild(closeBtn);
-        document.body.appendChild(modal);
-
-        images.forEach((img) => {
-          img.addEventListener("click", function () {
-            modal.style.display = "flex";
-            modalImg.src = this.src;
-          });
         });
 
-        closeBtn.addEventListener("click", function () {
-          modal.style.display = "none";
+        document.addEventListener("DOMContentLoaded", function () {
+            const subscribeButton = document.querySelector("#subscribeButton");
+            const nameInput = document.querySelector('input[placeholder="Name"]');
+            const emailInput = document.querySelector('input[placeholder="Email"]');
+
+            if (subscribeButton && nameInput && emailInput) {
+                subscribeButton.addEventListener("click", function () {
+                    const name = nameInput.value;
+                    const email = emailInput.value;
+                    if (name && email) {
+                        const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
+                        if (confirmation) {
+                            alert("감사합니다");
+                        }
+                    } else {
+                        alert("이름과 이메일을 입력해 주시겠습니까?");
+                    }
+                });
+            }
         });
 
-        modal.addEventListener("click", function (event) {
-          if (event.target === modal) {
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = ["images/longad1.jpg", "images/longad2.jpg", "images/longad3.jpg"];
+            let currentIndex = 0;
+            const mainImage = document.querySelector('img[alt="Main Image"]');
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                mainImage.src = images[currentIndex];
+            }, 3000);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll("img");
+            const modal = document.createElement("div");
+            const modalImg = document.createElement("img");
+            const closeBtn = document.createElement("span");
+
             modal.style.display = "none";
-          }
+            modal.style.position = "fixed";
+            modal.style.zIndex = "1000";
+            modal.style.left = "0";
+            modal.style.top = "0";
+            modal.style.width = "100%";
+            modal.style.height = "100%";
+            modal.style.overflow = "auto";
+            modal.style.backgroundColor = "rgba(0,0,0,0.8)";
+            modal.style.justifyContent = "center";
+            modal.style.alignItems = "center";
+
+            modalImg.style.maxWidth = "100%";
+            modalImg.style.maxHeight = "100%";
+            modalImg.style.transform = "scale(2)";
+
+            closeBtn.style.position = "absolute";
+            closeBtn.style.top = "10px";
+            closeBtn.style.right = "25px";
+            closeBtn.style.color = "#fff";
+            closeBtn.style.fontSize = "35px";
+            closeBtn.style.fontWeight = "bold";
+            closeBtn.style.cursor = "pointer";
+            closeBtn.innerHTML = "&times;";
+
+            modal.appendChild(modalImg);
+            modal.appendChild(closeBtn);
+            document.body.appendChild(modal);
+
+            images.forEach((img) => {
+                img.addEventListener("click", function () {
+                    modal.style.display = "flex";
+                    modalImg.src = this.src;
+                });
+            });
+
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            modal.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
         });
-      });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const textElement = document.querySelector("#headline");
-        const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"];
-        let colorIndex = 0;
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElement = document.querySelector("#headline");
+            const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"];
+            let colorIndex = 0;
 
-        setInterval(() => {
-          textElement.style.color = colors[colorIndex];
-          colorIndex = (colorIndex + 1) % colors.length;
-        }, 500);
-      });
+            setInterval(() => {
+                textElement.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 500);
+        });
     </script>
 </body>
 </html>
