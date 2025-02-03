@@ -6,7 +6,7 @@
     <title>Demo website</title>
     <style>
       body {
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         background-color: #f0f0f0;
         margin: 0;
         font-size: 14px;
@@ -95,7 +95,7 @@
       .nav-container {
         padding: 10px;
         text-align: center;
-        font-family: "Verdana", sans-serif;
+        font-family: 'Verdana', sans-serif;
         font-size: 14px;
       }
       .nav-container a {
@@ -172,22 +172,10 @@
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr align="center">
                       <td width="33%" style="border: none; padding: 10px">
-                        <table
-                          width="100%"
-                          border="2"
-                          cellspacing="0"
-                          cellpadding="3"
-                          style="border-style: outset; margin: 10px"
-                        >
+                        <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px">
                           <tr>
                             <td align="center" style="display: flex; flex-direction: column; align-items: center">
-                              <img
-                                src="images/ad1.jpg"
-                                width="200"
-                                height="150"
-                                alt="silicone sheeting"
-                                style="margin: 0 auto"
-                              />
+                              <img src="images/ad1.jpg" width="200" height="150" alt="silicone sheeting" style="margin: 0 auto" />
                               <br />silicone sheeting<br />
                               <font color="#FF0000"><b>7.99$</b></font>
                             </td>
@@ -204,13 +192,7 @@
                         >
                           <tr>
                             <td align="center" style="display: flex; flex-direction: column; align-items: center">
-                              <img
-                                src="images/ad2.jpg"
-                                width="200"
-                                height="150"
-                                alt="Definitive Rubber"
-                                style="margin: 0 auto"
-                              />
+                              <img src="images/ad2.jpg" width="200" height="150" alt="Definitive Rubber" style="margin: 0 auto" />
                               <br />Definitive Rubber<br />
                               <font color="#FF0000"><b>10.99$</b></font>
                             </td>
@@ -218,22 +200,10 @@
                         </table>
                       </td>
                       <td width="33%" style="border: none; padding: 10px">
-                        <table
-                          width="100%"
-                          border="2"
-                          cellspacing="0"
-                          cellpadding="3"
-                          style="border-style: outset; margin: 10px"
-                        >
+                        <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px">
                           <tr>
                             <td align="center" style="display: flex; flex-direction: column; align-items: center">
-                              <img
-                                src="images/ad3.jpg"
-                                width="200"
-                                height="150"
-                                alt="Industrial Rubber"
-                                style="margin: 0 auto"
-                              />
+                              <img src="images/ad3.jpg" width="200" height="150" alt="Industrial Rubber" style="margin: 0 auto" />
                               <br />Industrial Rubber<br />
                               <font color="#FF0000"><b>4.99$</b></font>
                             </td>
@@ -436,52 +406,52 @@
       </table>
     </footer>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const loginButton = document.querySelector("#loginButton");
+      document.addEventListener('DOMContentLoaded', function () {
+        const loginButton = document.querySelector('#loginButton');
         const idInput = document.querySelector('input[placeholder="ID"]');
         const pwInput = document.querySelector('input[placeholder="Password"]');
-        const loginContainer = document.querySelector(".login-container");
+        const loginContainer = document.querySelector('.login-container');
 
         if (loginButton && idInput && pwInput && loginContainer) {
-          loginButton.addEventListener("click", function () {
+          loginButton.addEventListener('click', function () {
             const id = idInput.value;
             const pw = pwInput.value;
-            if (id === "user" && pw === "1234") {
-              alert("인증되셨습니다");
+            if (id === 'user' && pw === '1234') {
+              alert('인증되셨습니다');
               loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
                             <div style="background-color: white; color: black; padding: 8px; border-radius: 4px; display: inline-block;">
                                 <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
                             </div>`;
             } else {
-              alert("아이디 또는 비밀번호가 틀렸습니다");
+              alert('아이디 또는 비밀번호가 틀렸습니다');
             }
           });
         }
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const subscribeButton = document.querySelector("#subscribeButton");
+      document.addEventListener('DOMContentLoaded', function () {
+        const subscribeButton = document.querySelector('#subscribeButton');
         const nameInput = document.querySelector('input[placeholder="Name"]');
         const emailInput = document.querySelector('input[placeholder="Email"]');
 
         if (subscribeButton && nameInput && emailInput) {
-          subscribeButton.addEventListener("click", function () {
+          subscribeButton.addEventListener('click', function () {
             const name = nameInput.value;
             const email = emailInput.value;
             if (name && email) {
               const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
               if (confirmation) {
-                alert("감사합니다");
+                alert('감사합니다');
               }
             } else {
-              alert("이름과 이메일을 입력해 주시겠습니까?");
+              alert('이름과 이메일을 입력해 주시겠습니까?');
             }
           });
         }
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = ["images/longad1.jpg", "images/longad2.jpg", "images/longad3.jpg"];
+      document.addEventListener('DOMContentLoaded', function () {
+        const images = ['images/longad1.jpg', 'images/longad2.jpg', 'images/longad3.jpg'];
         let currentIndex = 0;
         const mainImage = document.querySelector('img[alt="Main Image"]');
 
@@ -490,63 +460,63 @@
           mainImage.src = images[currentIndex];
         }, 3000);
       });
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll("img");
-        const modal = document.createElement("div");
-        const modalImg = document.createElement("img");
-        const closeBtn = document.createElement("span");
+      document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('img');
+        const modal = document.createElement('div');
+        const modalImg = document.createElement('img');
+        const closeBtn = document.createElement('span');
 
-        modal.style.display = "none";
-        modal.style.position = "fixed";
-        modal.style.zIndex = "1000";
-        modal.style.left = "0";
-        modal.style.top = "0";
-        modal.style.width = "100%";
-        modal.style.height = "100%";
-        modal.style.overflow = "auto";
-        modal.style.backgroundColor = "rgba(0,0,0,0.8)";
-        modal.style.justifyContent = "center";
-        modal.style.alignItems = "center";
+        modal.style.display = 'none';
+        modal.style.position = 'fixed';
+        modal.style.zIndex = '1000';
+        modal.style.left = '0';
+        modal.style.top = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.overflow = 'auto';
+        modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'center';
 
-        modalImg.style.maxWidth = "100%";
-        modalImg.style.maxHeight = "100%";
-        modalImg.style.transform = "scale(2)";
+        modalImg.style.maxWidth = '100%';
+        modalImg.style.maxHeight = '100%';
+        modalImg.style.transform = 'scale(2)';
 
-        closeBtn.style.position = "absolute";
-        closeBtn.style.top = "10px";
-        closeBtn.style.right = "25px";
-        closeBtn.style.color = "#fff";
-        closeBtn.style.fontSize = "35px";
-        closeBtn.style.fontWeight = "bold";
-        closeBtn.style.cursor = "pointer";
-        closeBtn.innerHTML = "&times;";
+        closeBtn.style.position = 'absolute';
+        closeBtn.style.top = '10px';
+        closeBtn.style.right = '25px';
+        closeBtn.style.color = '#fff';
+        closeBtn.style.fontSize = '35px';
+        closeBtn.style.fontWeight = 'bold';
+        closeBtn.style.cursor = 'pointer';
+        closeBtn.innerHTML = '&times;';
 
         modal.appendChild(modalImg);
         modal.appendChild(closeBtn);
         document.body.appendChild(modal);
 
         images.forEach((img) => {
-          img.addEventListener("click", function () {
-            modal.style.display = "flex";
+          img.addEventListener('click', function () {
+            modal.style.display = 'flex';
             modalImg.src = this.src;
           });
         });
 
-        closeBtn.addEventListener("click", function () {
-          modal.style.display = "none";
+        closeBtn.addEventListener('click', function () {
+          modal.style.display = 'none';
         });
 
-        modal.addEventListener("click", function (event) {
+        modal.addEventListener('click', function (event) {
           if (event.target === modal) {
-            modal.style.display = "none";
+            modal.style.display = 'none';
           }
         });
       });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const textElement = document.querySelector("#headline");
-        const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"];
+      document.addEventListener('DOMContentLoaded', function () {
+        const textElement = document.querySelector('#headline');
+        const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
         let colorIndex = 0;
 
         setInterval(() => {
